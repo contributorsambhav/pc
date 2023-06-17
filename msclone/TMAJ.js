@@ -59,7 +59,4 @@ document.write((Jokes[a]))
 first = document.getElementById("content")
                 
 first.style.color = "bisquewhite"
-
-
-
  
