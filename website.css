@@ -1,0 +1,43 @@
+li{
+    display: inline;
+    color : white;
+
+
+}
+
+ul{
+    list-style: none;
+    background-color: blueviolet;
+    padding: 2px;
+}
+
+.institute{
+ float: left;
+
+}
+
+img{
+    display: inline-block;
+  
+}
+
+.para{
+    display: inline-block;
+   
+}
+
+.gathu{
+  
+    float:right;
+    width:290px;
+
+}
+
+hr{
+    color: darkgreen;
+}
+
+.follow{
+    width: 50px;
+    display: inline-block;
+}
