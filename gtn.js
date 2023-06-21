@@ -1,6 +1,6 @@
-const prompt = require('prompt-sync')({sigint : true})
+const prompt = require('prompt-sync')({ sigint: true })
 
-chances = 100
+chances = 15
 
 console.log(`you have ${chances} chances`)
 
@@ -27,7 +27,14 @@ for (i = chances; i > 0; i--) {
     }
   }
 }
+let scr = 16 - chances
+console.log(`great your score is ` + scr)
+let n = prompt("Enter your name")
+const fs = require("fs")
 
-console.log(`great your score is ${101 - chances} `)
+fs.appendFile('hiscore.txt', `${n} scored ${scr}`, function (err) {
+  if (err) throw err;
+  console.log('Saved!');
+});
 
 
