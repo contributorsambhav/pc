@@ -29,12 +29,12 @@ for (i = chances; i > 0; i--) {
 }
 let scr = 16 - chances
 console.log(`great your score is ` + scr)
-let n = prompt("Enter your name")
+let n = prompt("Enter your name: ")
 const fs = require("fs")
 
-fs.appendFile('hiscore.txt', `${n} scored ${scr}`, function (err) {
+fs.appendFile('hiscore.txt', `${n} scored ${scr} on `+new Date()+"\n  \n", function (err) {
   if (err) throw err;
-  console.log('Saved!');
+  console.log('Your Score is Saved!');
 });
 
 
