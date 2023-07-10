@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+
+
+
+    <div id="first" class="bg-black text-green-600 text-xl text-center"></div>
+
+    <script>
+setTimeout(()=>{
+    first.innerHTML = first.innerHTML+"Fetching wifi... please wait "+"<br>";
+},2000)
+
+
+
+
+setTimeout(()=>{
+    first.innerHTML = first.innerHTML+"Scanning for wifi around.. please wait"+"<br>";
+},4000)
+
+setTimeout(()=>{
+    first.innerHTML = first.innerHTML+"Fetching wifi... please wait"+"<br> <br>";
+},5500)
+
+
+
+
+
+
+
+
+setTimeout(()=>{
+    first.innerHTML = first.innerHTML + "Found some networks"+"<br>"
+    first.innerHTML = first.innerHTML + "COFE_008C "+"<br>"
+    first.innerHTML = first.innerHTML + "bsnl_0606 "+"<br> <br>"
+}, 7500)
+
+setTimeout(() => {
+    first.innerHTML = first.innerHTML + "Found some more networks  "+"<br> "
+    first.innerHTML = first.innerHTML + "TITAN-M "+"<br>"
+    first.innerHTML = first.innerHTML + "jeos "+"<br>"
+    first.innerHTML = first.innerHTML + "Shivaye "+"<br><br>"
+}, 9500)
+
+
+setTimeout(() => {
+    first.innerHTML = first.innerHTML + "Hacking Shivaye... please wait "+"<br>"
+}, 12500)
+
+setTimeout(() => {
+a=["Fetching username and password BRUTEFORCE.. please wait" + "<br>",
+"Fetching username and password BRUTEFORCE.. please wait" + "<br>",
+"Fetching username and password BRUTEFORCE.. please wait" + "<br>",
+"Fetching username and password BRUTEFORCE.. please wait" + "<br>",
+"Fetching username and password BRUTEFORCE.. please wait" + "<br>",
+"Fetching username and password BRUTEFORCE.. please wait" + "<br>",
+"Fetching username and password BRUTEFORCE.. please wait" + "<br>",
+"Fetching username and password BRUTEFORCE.. please wait" + "<br>"]
+
+a.forEach(element => {
+    setTimeout(()=>{
+        first.innerHTML = first.innerHTML + element 
+    },300)
+});
+
+}, 15000)
+
+setTimeout(() => {
+    first.innerHTML = first.innerHTML + "Credentials Fetched ...  Refer to index.html "
+}, 19500)
+    </script>
+
+
+</body>
+
+</html>

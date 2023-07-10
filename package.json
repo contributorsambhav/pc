@@ -6,6 +6,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "prompt-sync": "^4.2.0"
+    "prompt-sync": "^4.2.0",
+    "stock-nse-india": "^1.1.2"
   }
 }
