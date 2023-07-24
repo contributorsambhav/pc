@@ -1,16 +1,17 @@
-console.log("this is mod.js")
-let sum = 0;
+
 
 function average(arr){
+
+   let sum = 0;
+   
  arr.forEach(element => {
     sum +=element
 
  });
-
-let result = sum/arr.length
+let a = arr.length
+let result = sum/a
  return result
 }
 
-console.log(average([5,6]))
 
 module.exports = average
