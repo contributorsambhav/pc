@@ -6,6 +6,8 @@ console.log(average([4,5,7,8]))
 
 console.log(average([98,78]))
 
+console.log(average([98,78]))
+
 
 
 
