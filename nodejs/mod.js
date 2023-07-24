@@ -1,12 +1,16 @@
 console.log("this is mod.js")
+let sum = 0;
 
 function average(arr){
- let sum = 0;
- arr.array.forEach(element => {
+ arr.forEach(element => {
     sum +=element
+
  });
+
+let result = sum/arr.length
+ return result
 }
 
-// console.log(jodd(5,6))
+console.log(average([5,6]))
 
-module.exports = jodd
+module.exports = average
