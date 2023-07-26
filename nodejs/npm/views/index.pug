@@ -1,13 +1,16 @@
-//using plain html in pug
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title}</title>
+    style
+        include ../static/style.css
 </head>
 <body>
     This is a plain html in pug
-    #{content}
+    |<!-- pipe character is used to use if variable is not in between line -->
+    | #{content}
 </body>
 </html>
