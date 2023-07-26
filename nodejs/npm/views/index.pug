@@ -9,8 +9,32 @@
         include ../static/style.css
 </head>
 <body>
-    This is a plain html in pug
-    |<!-- pipe character is used to use if variable is not in between line -->
-    | #{content}
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+<h1>Hurry! Fill this form now</h1>
+        This is a plain html in pug
+        |<!-- pipe character is used to use if variable is not in between line -->
+        | #{content}
+        
+        <form action="/" id="contact">
+
+<input type="text" name="name" id="name" placeholder="Enter your name">
+<input type="text" name="age" id="age" placeholder="Enter your age">
+<input type="text" name="Gender" id="Gender" placeholder="Enter your Gender">
+<input type="textarea" name="more" id="more" placeholder="Tell us more about you">
+<button class="btn">Submit</button>
+
+
+        </form>
+    </div>
+
 </body>
 </html>
