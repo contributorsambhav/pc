@@ -55,7 +55,7 @@ app.post("/",((req,res)=>{
     let objage = req.body.age
     let objgender = req.body.gender
     let objmore = req.body.more
-    let writeOutput = `The name of client is ${objname} \n Age is  ${objage}\n Gender is ${objgender} \n Some more info is that  \" ${objmore} \" \n`
+    let writeOutput = `The name of client is ${objname} \n Age is  ${objage}\n Gender is ${objgender} \n Some more info is that  \" ${objmore} \" \n \n `
 
 fs.appendFileSync('output.txt',writeOutput)
 
