@@ -2,9 +2,14 @@ const express = require("express")
 const app = express();
 const port = 80;
 const path = require('path')
+const fs = require('fs')
+
+
 
 // for serving static files
 app.use("/static",express.static("static"))
+
+app.use(express.urlencoded())
 
 
 // set the template engine as pug
@@ -40,6 +45,23 @@ app.get("/",((req,res)=>{
     const con = "This is text content saved as variable"
     const parameters ={"title": "This is title as object","content":con}
     res.status(200).render("index.pug",parameters)
+}))
+
+app.post("/",((req,res)=>{
+
+    //Storing details recieved by post request in javascript variables
+
+    let objname = req.body.name
+    let objage = req.body.age
+    let objgender = req.body.gender
+    let objmore = req.body.more
+    let writeOutput = `The name of client is ${objname} \n Age is  ${objage}\n Gender is ${objgender} \n Some more info is that  \" ${objmore} \" \n`
+
+fs.appendFileSync('output.txt',writeOutput)
+
+    const parameters ={"message": "Info submitted succesfully"}
+    res.status(200).render("index.pug",parameters)
+
 }))
 // Note : parameters is an object that assigns title as given string and content is read from the avriablr con
 

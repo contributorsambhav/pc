@@ -60,17 +60,10 @@ input{
     width:60%;
     border:2px solid black;
     border-radius: 8px;  
+    height: 5vh;
 }
 
-textarea{
-    display: block;
-    padding: 3px;
-    margin: 5px auto;
-    width:60%;
-    border:2px solid black;
-    border-radius: 8px;
-    min-height: 80px;
-}
+
 
 .btn{
     padding: 4px;
@@ -87,4 +80,8 @@ h1{
     text-align: center;
     color: black;
     opacity: 2;
+}
+
+.textarea{
+    height: 10vh;
 }

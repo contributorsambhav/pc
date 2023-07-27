@@ -1,0 +1,9 @@
+The name of client is Sambhav 
+ Age is  17
+ Gender is Male 
+ Some more info is that  " Student at NIT-H "
+
+ The name of client is Sambhav 
+ Age is  17
+ Gender is Male 
+ Some more info is that  " Student at NIT-H " 
