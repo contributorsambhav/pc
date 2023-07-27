@@ -57,7 +57,7 @@ app.post("/",((req,res)=>{
     let objmore = req.body.more
     let writeOutput = `The name of client is ${objname} \n Age is  ${objage}\n Gender is ${objgender} \n Some more info is that  \" ${objmore} \" \n \n `
 
-fs.appendFileSync('output.txt',writeOutput)
+    fs.appendFileSync('output.txt',writeOutput)
 
     const parameters ={"message": "Info submitted succesfully"}
     res.status(200).render("index.pug",parameters)
@@ -70,5 +70,4 @@ fs.appendFileSync('output.txt',writeOutput)
 app.listen(port,(()=>{
     console.log("The application started succesfully on port "+port)
 }))
-
 

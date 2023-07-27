@@ -28,10 +28,18 @@
 
             <form action="/" method="post" id="contact">
                 <input type="text" name="name" id="name" placeholder="Enter your name" />
+
                 <input type="text" name="age" id="age" placeholder="Enter your age" />
-                <input type="text" name="gender" id="Gender" placeholder="Enter your Gender" />
-                <input type="textarea" name="more" id="textarea" placeholder="Tell us more about you" />
-                <button class="btn text">Submit</button>
+
+                <select id="gender" name="gender"> 
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                
+                <input type="textarea" name="more" id="more" placeholder="Tell us more about you" />
+
+                <button class="btn">Submit</button>
+
             </form>
         </div>
     </div>
