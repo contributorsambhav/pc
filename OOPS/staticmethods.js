@@ -13,9 +13,7 @@ run(name){
     console.log(this.name+" is running")
 
 }
-
 }
-
 let anti = new animal("sloth")
 
 
