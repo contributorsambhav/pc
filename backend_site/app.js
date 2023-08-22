@@ -47,24 +47,38 @@ app.get("/",((req,res)=>{
     res.status(200).render("index.pug",parameters)
 }))
 
-app.post("/",((req,res)=>{
 
-    //Storing details recieved by post request in javascript variables
-
-    let objname = req.body.name
-    let objage = req.body.age
-    let objgender = req.body.gender
-    let objmore = req.body.more
-    let writeOutput = `The name of client is ${objname} \n Age is  ${objage}\n Gender is ${objgender} \n Some more info is that  \" ${objmore} \" \n \n `
-
-    fs.appendFileSync('output.txt',writeOutput)
-
-    const parameters ={"message": "Info submitted succesfully"}
-    res.status(200).render("index.pug",parameters)
-
-}))
+  
 // Note : parameters is an object that assigns title as given string and content is read from the avriablr con
 
+app.get("/about",((req,res)=>{
+    res.status(200).render("index.pug")
+}))
+
+app.get("/contact",((req,res)=>{
+    res.status(200).render("index.pug")
+}))
+
+app.get("/form",((req,res)=>{
+    res.status(200).render("form.pug")
+}))
+
+app.post("/form",((req,res)=>{
+
+//Storing details recieved by post request in javascript variables
+
+let objname = req.body.name
+let objage = req.body.age
+let objgender = req.body.gender
+let objmore = req.body.more
+let writeOutput = `The name of client is ${objname} \n Age is  ${objage}\n Gender is ${objgender} \n Some more info is that  \" ${objmore} \" \n \n `
+
+fs.appendFileSync('output.txt',writeOutput)
+
+const parameters ={"message": "Info submitted succesfully"}
+res.status(200).render("form.pug")
+
+}))
 
 //starting the server
 app.listen(port,(()=>{
