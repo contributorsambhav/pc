@@ -113,3 +113,10 @@ select{
 
     
 }
+
+.about,.contact,.home{
+    color:red;
+    background-color: blue;
+    margin-top : 50px;
+
+}

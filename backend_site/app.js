@@ -52,11 +52,11 @@ app.get("/",((req,res)=>{
 // Note : parameters is an object that assigns title as given string and content is read from the avriablr con
 
 app.get("/about",((req,res)=>{
-    res.status(200).render("index.pug")
+    res.status(200).render("about.pug")
 }))
 
 app.get("/contact",((req,res)=>{
-    res.status(200).render("index.pug")
+    res.status(200).render("contact.pug")
 }))
 
 app.get("/form",((req,res)=>{
