@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ancestor">
+
+        <div class="conf">
+            <div id="baccha"></div>
+            <script>
+                       
+                let bool = confirm("Your are sexy" );
+                if (bool){
+                    console.log("right")
+                }else{
+                    console.log("Wrong")
+                }
+                </script>
+
+        </div>
+    </div>
+
+    <script>
+       let conf = document.querySelector(".conf")
+       let bachha = document.getElementById("baccha")
+       console.log(conf)
+       console.log(conf.closest(".ancestor"))
+       console.log(conf.contains(baccha))
+
+    </script>
+</body>
+</html>
