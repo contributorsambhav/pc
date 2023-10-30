@@ -9,7 +9,11 @@
     <div class="ancestor">
 
         <div class="conf">
-            <div id="baccha"></div>
+            <div id="baccha">Beginning 
+                <br>
+                body<br>
+                end
+            </div>
             <script>
                        
                 let bool = confirm("Your are sexy" );
@@ -29,6 +33,11 @@
        console.log(conf)
        console.log(conf.closest(".ancestor"))
        console.log(conf.contains(baccha))
+       baccha.insertAdjacentHTML("afterbegin",'<p>afterbegin</p>')
+       baccha.insertAdjacentHTML("afterend",'<p>afterend</p>')
+       
+       baccha.insertAdjacentHTML("beforebegin",'<p>beforebegin</p>')
+       baccha.insertAdjacentHTML("beforeend",'<p>beforeend</p>')
 
     </script>
 </body>
