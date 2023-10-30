@@ -16,7 +16,7 @@ console.log(a2)
 
 // reduce method
 let a3 = arr2.reduce((h1,h2)=>{
-    return h1+h2
+    return h1*h2
 })
 
-console.log (typeof a3)
+console.log ( a3)
