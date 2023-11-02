@@ -1,11 +1,11 @@
 async function wait() {
-
+    console.log("No need to await")
 
         var delhiweather = new Promise((resolve, reject) => {
             setTimeout(() => {
-                console.log("Hi")
+                console.log("Value those who await for you")
                 resolve("46-degrees")
-            }, 2000);
+            }, 5000);
         })
 
 
