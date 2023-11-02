@@ -20,8 +20,11 @@ p1.then((value) => {
         })
     
 }).then((value)=>{
-    setTimeout(() => {
-        
-        console.log("Now we are pakka done")
-    }, 1000);
+    return new Promise((resolve,reject )=>{
+
+        setTimeout(() => {
+            resolve ("Finally")            
+            console.log("Now we are pakka done")
+        }, 1000);
+    })
 })
