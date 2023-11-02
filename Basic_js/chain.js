@@ -5,12 +5,14 @@ let p1 = new Promise((resolve, reject) => {
   let p2 = new Promise((resolve, reject) => {
     myfunc(value);
     let sec = value * 2;
-    resolve(sec);
+    resolve(sec)
+    return p2;
   }).then((value) => {
     let p3 = new Promise((resolve, reject) => {
       myfunc(value);
       let third = value * 3;
       resolve(third);
+      return p3
     })
       .then((value) => {
         myfunc(value);
@@ -26,11 +28,11 @@ p1.then(() => {
 });
 
 // p2.then(()=>{
-//   console.log("Independent p2 call") will give error as p2 is defined in p1 not globally
+//   console.log("Independent p2 call")// will give error as p2 is defined in p1 not globally
 // })
 
 // p3.then(()=>{
-//   console.log("Independent p3 call")
+//   console.log("Independent p3 call") will give error as p3 is local and not global since it is not returned
 // })
 
 function myfunc(value){
