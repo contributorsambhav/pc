@@ -1,18 +1,18 @@
-let vaibhav =["physio","the","rapist", "lpu", "gmr","snr"]
+let evil =["physio","the","rapist", "lpu", "gmr","snr"]
 
-for(i=0;i<vaibhav.length;i++){
-    console.log(vaibhav[i])
+for(i=0;i<evil.length;i++){
+    console.log(evil[i])
 }
-let b = vaibhav.toString()
+let b = evil.toString()
 console.log(b)
 console.log(typeof b)
 
-console.log(vaibhav.push())
+console.log(evil.push())
 
-vaibhav.pop()
-vaibhav.shift()
-console.log(vaibhav.push())
-console.log(vaibhav)
+evil.pop()
+evil.shift()
+console.log(evil.push())
+console.log(evil)
 
-vaibhav.unshift("mr")
-console.log(vaibhav)
+evil.unshift("mr")
+console.log(evil)
