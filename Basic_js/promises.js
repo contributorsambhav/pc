@@ -8,15 +8,7 @@ let myPromise = new Promise(function (myResolve, myReject) {
 }).then((value) => {
     console.log(value)
     var p2 = new Promise(function (myResolve, myReject) {
-
-
         myResolve(66)
-
-
     })
-    return p2
-})
-
-p2.then((value)=>{
-    console.log(value)
+    
 })
