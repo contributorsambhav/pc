@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSC Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo color.png" type="image/x-icon">
+</head>
+
+<body class="bg-gray-100 h-screen flex flex-col">
+    <nav class="bg-blue-400 items-center justify-center rounded-lg text-white p-2 flex justify-between">
+        <div class="text-xl">
+            <a href="#" class="text-white text-2xl font-medium "><img class="inline-block h-6" src="google icon.png"
+                    alt=""></a>oogle for Developers
+        </div>
+        <ul class="flex">
+            <li><a href="#" class="text-white font-semibold hover:underline ml-4">Home</a></li>
+            <li><a href="#" class="text-white font-semibold hover:underline ml-4">About</a></li>
+            <li><a href="#" class="text-white font-semibold hover:underline ml-4 mr-4">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="mt-4 w-[50%] rounded-lg mx-auto p-2 text-4xl font-semiboldrounded-md text-center bg-white"><img
+            class="inline-block" src="logo color.png" width="70"><img src="google-ar21 (3).svg" class="inline-block" alt="">
+            <div class="text-3xl mt-1 inline-block">Developer Student Clubs</div>
+            
+        </div>
+
+
+
+    <div class="bg-white rounded-lg p-8 mx-auto mt-4 shadow-md w-[40%]">
+
+        <h2 class="text-4xl  text-center mx-auto font-medium mb-4">Login</h2>
+
+        <form>
+
+            <div class="mb-4 ">
+                <label for="chapter" class="block text-gray-600 text-sm font-medium">Chapter</label>
+                <select id="chapter" name="chapter" class="mt-1 p-2 w-full border rounded-md">
+                    <option value="chapter1">National Institute of Technology Hamirpur</option>
+                    <option value="chapter2">Chapter 2</option>
+                    <option value="chapter3">Chapter 3</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="block text-gray-600 text-sm font-medium">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <div class="mb-6">
+                <label for="password" class="block text-gray-600 text-sm font-medium">Password</label>
+                <input type="password" id="password" name="password" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded-md w-full">Login</button>
+            <button class="mt-2 text-black border-gray border-[1px] border-black p-2 rounded-lg w-full mb-4">
+                <img src="google icon.png" class="h-4 inline-block "> Sign in with Google
+            </button>
+    
+        </form>
+
+        <div class="mt-4 text-sm text-gray-600">
+            <a href="#" class="underline">Forgot password?</a>
+            <span class="mx-2">|</span>
+            <a href="#" class="underline">Create an account</a>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

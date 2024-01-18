@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: gradientAnimation 10s ease infinite alternate-reverse;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #a1c4fd, #92e6d9);
+    }
+
+    100% {
+        background: linear-gradient(45deg, #c2e9fb, #a1c4fd);
+    }
+}
